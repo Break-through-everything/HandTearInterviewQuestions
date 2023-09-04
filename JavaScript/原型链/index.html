@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Star() { }
+        let obj = new Star
+
+        // console.log(obj);
+        // console.log(obj.__proto__);
+        // console.log(obj.__proto__.constructor);
+        let ary = new Array
+        // console.log(ary);
+        console.log(Array.__proto__);
+        console.log(Array.prototype.__proto__);
+        // console.log(ary.__proto__.constructor);
+        /*
+        以Array为例，Array是一个构造函数的同时也是一个对象，具有一个属性__protp__，指向他的构造函数的原型，
+        因为Array本身是一个函数，他是Function的一个实例化对象，也就是说Array的构造函数是Function，他的原型对象是Function.prototype，
+        同时他自己作为一个构造函数，他也有一个prototype属性，prototype的__protp__指向该prototype的构造函数的prototype，
+        也就是Object.prototype。
+
+        Function是个对象，他的__protp__指向Object.prototype
+        Object.prototype.__protp__指向Function.prototype
+         */
+    </script>
+</body>
+
+</html>
